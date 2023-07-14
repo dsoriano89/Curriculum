@@ -1,0 +1,140 @@
+body {
+  background: lightgrey;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+main {
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: 4, 1f;
+  grid-template-rows: auto;
+  grid-template-areas: "about about about about" "quote quote quote quote" "job__experience job__experience job__skills job__skills" "edu__college edu__college edu__complementary edu__complementary";
+}
+
+header nav {
+  background-color: rgb(106, 90, 205);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(240, 248, 255);
+}
+
+h1 {
+  text-align: center;
+}
+
+#about {
+  display: flex;
+  grid-area: about;
+}
+
+#about__photo {
+  max-width: 200px;
+  height: auto;
+}
+
+#about__info {
+  background-color: rgb(240, 248, 255);
+  padding: 50px;
+}
+
+#quote {
+  grid-area: quote;
+  background-color: rgb(25, 25, 112);
+  color: rgb(240, 248, 255);
+  text-align: center;
+  padding: 20px 0;
+}
+
+#quote__cite {
+  font-size: 1.2rem;
+}
+
+#job__experience {
+  grid-area: job__experience;
+  background-color: rgb(240, 248, 255);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 6, 1fr;
+  grid-template-rows: auto;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-areas: "job__1 job__1 job__2 job__2 job__3 job__3" "job__4 job__4 job__4 job__5 job__5 job__5";
+}
+
+.job__cards {
+  background-color: rgb(131, 111, 255);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#job__1 {
+  grid-area: job__1;
+}
+
+#job__2 {
+  grid-area: job__2;
+}
+
+#job__3 {
+  grid-area: job__3;
+}
+
+#job__4 {
+  grid-area: job__4;
+}
+
+#job__5 {
+  grid-area: job__5;
+}
+
+.job__logo {
+  max-width: 150px;
+  height: auto;
+}
+
+#job__skills {
+  grid-area: job__skills;
+  background-color: rgb(240, 248, 255);
+  padding: 20px;
+}
+
+#edu__college {
+  grid-area: edu__college;
+  background-color: rgb(240, 248, 255);
+  padding: 20px;
+}
+
+#edu__complementary {
+  grid-area: edu__complementary;
+  background-color: rgb(131, 111, 255);
+  padding: 20px;
+}
+
+#contact {
+  background-color: rgb(25, 25, 112);
+  color: rgb(240, 248, 255);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.contact__icons {
+  max-width: 40px;
+  height: auto;
+}
+
+#contact__info p {
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
