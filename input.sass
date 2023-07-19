@@ -10,7 +10,7 @@ body
  font-family: sans-serif
 
 main 
-  width: 1200px
+  max-width: 1200px
   margin: 0 auto
   display: grid
   column-gap: 10px 
@@ -60,11 +60,12 @@ h1
  background-color: $base
  padding: $padding20
  display: grid
- grid-template-columns: (6, 1fr)
+ grid-template-columns: (6, 3fr)
  grid-template-rows: auto
  column-gap: 10px
  row-gap: 10px
- grid-template-areas: "job__1 job__1 job__2 job__2 job__3 job__3" "job__4 job__4 job__4 job__5 job__5 job__5"
+ grid-template-areas: "job__1 job__1 job__2 job__2 job__3 job__3" 
+ "job__4 job__4 job__4 job__5 job__5 job__5"
 
 .job__cards
  background-color: $light-blue
